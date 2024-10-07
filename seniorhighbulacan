@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>BCP-Admission</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="BCP-Admission.php">
+                <img src="img/logoooo.png">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li id="#"class="link"><a href="BCP-Admission.php">Home</a></li>
+            <li id="link1" class="link"><a href="#">Applications</a></li>
+            <li id="link3" class="link"><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <h2 class="header">Application Process</h2>
+        <div class="features">
+        <div class="card">
+                <h4>Bulacan ABM</h4>
+                <p>
+                The Accountancy, Business, and Management (ABM) strand focuses on equipping students with knowledge and skills in accounting, finance, business management, and entrepreneurship, preparing them for careers in business and related fields
+                </p> <br>
+                <a href="submittion.php">Proceed <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="card">
+                <h4>Bulacan AUTO</h4>
+                <p>
+                An Automotive Course teaches skills for the automotive industry, covering engine repair, electrical systems, and more, preparing students for careers like automotive technician or engineer.
+                </p> <br>
+                <a href="healthcarecard2.php">Proceed <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="card">
+                <h4>Bulacan GAS</h4>
+                <p>
+                The General Academic Strand (GAS) provides students with a flexible curriculum that allows them to explore various academic disciplines, including humanities, social sciences, and business, preparing them for a range of higher education pathways.
+                </p> <br>
+                <a href="healthcarecard2.php">Proceed <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="card">
+                <h4>Bulacan HE</h4>
+                <p>
+                Home Economics is an educational field focused on managing home and family life, covering subjects like nutrition, cooking, budgeting, and sewing to promote practical skills for daily living.
+                </p>
+                <a href="healthcarecard3.php">proceed<i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="card">
+                <h4>Bulacan HUMSS</h4>
+                <p>
+                The Humanities and Social Sciences (HumSS) program examines human behavior, culture, and society, emphasizing critical thinking and understanding of social issues.
+                </p><br>
+                <a href="healthcarecard7.php">Proceed<i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="card">
+                <h4>Bulacan ICT</h4>
+                <p>Information and Communications Technology (ICT) involves using technology to manage and communicate information, including hardware, software, and telecommunications systems.</p>
+                <a href="healthcarecard8.php">Proceed<i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="card">
+                <h4>Bulacan PA</h4>
+                <p>
+                Performing Arts encompasses various artistic disciplines, including theater, dance, music, and performance art, where artists express their creativity through live performances. It emphasizes the interpretation of artistic works, collaboration, and audience engagement.</p>
+                <a href="healthcarecard8.php">Proceed<i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="card">
+                <h4>Bulacan STEM</h4>
+                <p>It encompasses educational fields and careers that focus on these disciplines, emphasizing critical thinking, problem-solving, and innovation to address real-world challenges and drive technological advancement.</p>
+                <a href="healthcarecard8.php">Proceed<i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="card">
+                <h4>Bulcan SMAW</h4>
+                <p>training programs in Shielded Metal Arc Welding that focus on teaching students welding techniques using a coated electrode. These courses cover safety practices, welding methods, and hands-on experience to prepare students for careers in various industries like construction and manufacturing</p>
+                <a href="healthcarecard8.php">Proceed<i class="ri-arrow-right-line"></i></a>
+            </div>
+            
+            <div class="card">
+                <h4>Bulcan SPORTS</h4>
+                <p>A Sports Track is an educational program focusing on physical education, athletics, and sports management, preparing students for careers in coaching, sports administration, and fitness training.</p>
+                <a href="healthcarecard8.php">Proceed<i class="ri-arrow-right-line"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="img/logoooo.png">
+            </div>
+            <p>
+            BESTLINK COLLEGE OF THE PHILIPPINES 
+            </p>
+            <div class="socials">
+                <a href="#"><i class="ri-facebook-line"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>About Us</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Channels</a>
+            <a href="#">Sponsors</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Privicy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Privicy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+       <!-- lagyan -->
+    </div>
+
+
+    <script>
+        function scrollToElement(elementSelector, instance = 0) {
+    // Select all elements that match the given selector
+    const elements = document.querySelectorAll(elementSelector);
+    // Check if there are elements matching the selector and if the requested instance exists
+    if (elements.length > instance) {
+        // Scroll to the specified instance of the element
+        elements[instance].scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+const link1 = document.getElementById("link1");
+const link2 = document.getElementById("link2");
+const link3 = document.getElementById("link3");
+
+link1.addEventListener('click', () => {
+    scrollToElement('.header');
+});
+
+link2.addEventListener('click', () => {
+    // Scroll to the second element with "header" class
+    scrollToElement('.header', 1);
+});
+
+link3.addEventListener('click', () => {
+    scrollToElement('.column');
+});
+    </script>
+</body>
+
+</html>
