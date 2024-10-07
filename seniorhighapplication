@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>BCP-Admission</title>
+    <style>
+        .contenth6 {
+            color: white; /* Set text color to white */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="BCP-Admission.php">
+                <img src="img/logoooo.png" alt="Logo">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+        <li id="#"class="link"><a href="BCP-Admission.php">Home</a></li>
+            <li id="link1" class="link"><a href="#">Applications</a></li>
+            <li id="link3" class="link"><a href="#">About Us</a></li>
+        </ul>
+        
+    </nav>
+
+    
+
+    <section class="container">
+        <h2 class="header">Application Process</h2>
+        <p class="sub-header">
+           <!--lagyan-->
+        </p>
+        <div class="pricing">
+            <div class="card">
+                <div class="content">
+                    <h4>Main</h4>
+                    <h3></h3>
+                    <h5 class="contenth6">#1071 Brgy. Kaligayahan, Quirino Highway Novaliches Quezon City</h5>  
+                </div>
+                <a href="seniorhighmain.php" class="btn">Proceed</a>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Bulacan Branch</h4>
+                    <h3></h3>
+                    <h5 class="contenth6">Lot 1 Ipo Road, Barangay Minuyan Proper, City of San Jose Del Monte, Bulacan</h5> <!-- Corrected closing tag -->
+                </div>
+                <a href="seniorhighbulacan.php" class="btn2">Proceed</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="img/logoooo.png" alt="Logo">
+            </div>
+            <p>BESTLINK COLLEGE OF THE PHILIPPINES</p>
+            <div class="socials">
+                <a href="https://bcp.edu.ph"><i class="ri-facebook-line"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>About Us</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Channels</a>
+            <a href="#">Sponsors</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a> <!-- Fixed spelling of "Privacy" -->
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+       <!-- lagyan -->
+    </div>
+
+    <script>
+        function scrollToElement(elementSelector, instance = 0) {
+            const elements = document.querySelectorAll(elementSelector);
+            if (elements.length > instance) {
+                elements[instance].scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        const link1 = document.getElementById("link1");
+        const link2 = document.getElementById("link2");
+        const link3 = document.getElementById("link3");
+
+        if (link1) {
+            link1.addEventListener('click', () => {
+                scrollToElement('.header');
+            });
+        }
+
+        if (link2) {
+            link2.addEventListener('click', () => {
+                scrollToElement('.header', 1);
+            });
+        }
+
+        if (link3) {
+            link3.addEventListener('click', () => {
+                scrollToElement('.column');
+            });
+        }
+    </script>
+</body>
+</html>
