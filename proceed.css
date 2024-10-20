@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the container */
+    padding: 20px;
+}
+
+/* Remove duplicated sections */
+.form-section, .requirements-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Fixed typo from "poiner" */
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.requirements-section h2 {
+    margin-top: 20px;
+}
+
+.requirements-section ul {
+    padding-left: 20px;
+}
+
+.requirements-section li {
+    margin-bottom: 10px;
+}
+
+.frame {
+    position: relative;
+    max-width: 900px; /* Maximum width for larger screens */
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    background-color: transparent; /* Set background color to transparent */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centers the frame */
+    
+}
+
+.frame header {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    right: 500px;
+}
+
+
+.frame form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: transparent; /* Set background color to transparent */
+    overflow: hidden;
+    right: 500px;
+}
+
+.frame form .form {
+    position: absolute;
+    background-color: transparent; /* Set background color to transparent */
+    transition: 0.3s ease;
+}
+
+.frame form .form.second {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+    position: relative;
+    margin-top: 16px;
+    min-height: 50px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+form.secActive .form.second {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+form.secActive .form.one {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+
+.frame form .admission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-fieldd {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    color: white;
+}
+
+.input-fields {
+    height: 42px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    margin: 8px 0;
+}
+
+.frame form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.input-field input,
+select {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field input:focus,
+.input-field select:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field select,
+.input-field input[type="date"] {
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid {
+    color: #333;
+}
+
+.frame form button,
+.backbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    max-width: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 50px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    float: right;
+}
+
+.frame form .buttonText {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form button:hover {
+    background-color: #265df2;
+}
+
+form button i,
+form .backbutton i {
+    margin: 0 6px;
+}
+
+form .backbutton i {
+    transform: rotate(180deg);
+}
+
+form .buttons button,
+.backbutton {
+    margin-right: 20px;
+}
+
+@media (max-width: 750px) {
+    .frame form {
+        overflow-y: scroll;
+    }
+
+    .frame form::-webkit-scrollbar {
+        display: none;
+    }
+
+    form .fields .input-field {
+        width: calc(100% / 2 - 15px);
+    }
+
+    .input-fieldd {
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field {
+        width: 100%;
+    }
+
+    .input-fieldd {
+        width: 100%;
+    }
+}
+.form-step {
+    display: none;
+}
+.form-step-active {
+    display: block;
+}
